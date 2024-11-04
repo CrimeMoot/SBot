@@ -1,6 +1,6 @@
 Многофункциональный селфбот написанный на discord.py-self
 
-![](https://github.com/CrimeMoot/SBot/tree/master/cogsscreenshot.png)
+![](https://github.com/CrimeMoot/SBot/tree/master/cogs/screenshot.png)
 
 # Функции
 ## Основные:
