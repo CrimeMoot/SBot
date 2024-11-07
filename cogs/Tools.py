@@ -69,15 +69,15 @@ class Tools(commands.Cog):
             await self.bot.change_presence(status=sstatus, activity=discord.Activity(type=discord.ActivityType.playing,
                                                                                      application_id=1029430390357774388,
                                                                                      name='Discord', assets={
-                    'large_image': '1029438970666426408', 'large_text': 'github.com/PuroSlavKing/Discord-AIM-SBot'}))
+                    'large_image': '1029438970666426408', 'large_text': 'github.com/CrimeMoot/SBot'}))
         elif cat in selfbot:
             await self.bot.change_presence(status=sstatus, activity=discord.Activity(type=discord.ActivityType.playing,
                                                                                      application_id=1032671485120229397,
                                                                                      name='Selfbot',
-                                                                                     details='github.com/PuroSlavKing/Discord-AIM-SBot',
+                                                                                     details='github.com/CrimeMoot/SBot',
                                                                                      assets={
                                                                                          'large_image': '1032672678106116216',
-                                                                                         'large_text': 'github.com/PuroSlavKing/Discord-AIM-SBot'}))
+                                                                                         'large_text': 'github.com/CrimeMoot/SBot'}))
         else:
             await ctx.message.edit(
                 content="**Доступные варианты: ```Обычные````Watching`, `Listening`, `Playing`, `Streaming` и `Reset`\n\n```Эксклюзивные````Discord`, `Selfbot`**")
@@ -132,7 +132,7 @@ class Tools(commands.Cog):
                 f.write(f'[{message_time} | {message.author}]: {message.content}\n')
                 saved += 1
 
-            f.write("\nСсылка: https://github.com/PuroSlavKing/Discord-AIM-SBot")
+            f.write("\nСсылка: https://github.com/CrimeMoot/SBot")
 
         await ctx.send(f"**:envelope: Успешно сохранил {saved} сообщений!**",
                        file=discord.File(f'messages_{ctx.channel.id}.txt'))

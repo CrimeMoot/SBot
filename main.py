@@ -75,7 +75,7 @@ except Exception as e:
     print(e)
     print(Fore.LIGHTBLUE_EX + '\nНа гитхабе селфбота написано как решить эту ошибку!!!')
     sleep(3)
-    webopen('https://github.com/PuroSlavKing/Discord-AIM-SBot', 2)
+    webopen('https://github.com/CrimeMoot/SBot', 2)
     while True: sleep(9)
 bot.remove_command('help')
 start_time = datetime.now()
@@ -147,7 +147,7 @@ async def on_connect():
     print(f"{color['Info_name']}Время запуска: {color['Info_value']}{start_time.strftime('%Y-%m-%d %H:%M:%S')}")
 
     if float(requests.get(
-            'https://raw.githubusercontent.com/PuroSlavKing/Discord-AIM-SBot/main/cogs/version').text) > version:
+            'https://raw.githubusercontent.com/CrimeMoot/SBot/master/cogs/version').text) > version:
         global update
         update = f':warning: Пожалуйста, обновите селфбота используя команду {pref}bot**\n**'
         print(
@@ -292,7 +292,7 @@ async def help(ctx, cat=None):
 
 @bot.command(name='github', aliases=['selfbot', 'бот', 'селфбот', 'гит', 'гитхаб', 'git', 'hub'])
 async def __bot(ctx):
-    await ctx.message.edit(content='**Ссылка: https://github.com/PuroSlavKing/Discord-AIM-SBot**')
+    await ctx.message.edit(content='**Ссылка: https://github.com/CrimeMoot/SBot.git**')
 
 
 @bot.command(aliases=['перезагрузка', 'стоп', 'перезагрузить', 'stop_all', 'остановить', 'reload', 'stop', 'reset'])
